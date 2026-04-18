@@ -2,8 +2,8 @@ import { SinglePriceGrid } from "components";
 
 export default function App() {
   return (
-    <div className="bg-light-gray grid min-h-dvh w-full grid-rows-[1fr_auto]">
-      <main className="mt-9 w-full max-w-77.75 place-self-center md:max-w-158.75">
+    <div className="bg-light-gray grid min-h-dvh w-full grid-rows-[1fr_auto] gap-8 sm:gap-0">
+      <main className="mt-9 w-full max-w-77.75 place-self-center sm:max-w-158.75">
         <SinglePriceGrid />
       </main>
       <footer className="mt-auto w-full pb-4 text-center text-black">

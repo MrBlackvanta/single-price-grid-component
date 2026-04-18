@@ -6,7 +6,7 @@ export type SinglePriceGridData = {
   };
   subscription: {
     title: string;
-    price: string;
+    price: number;
     description: string;
   };
   whyUs: {

@@ -5,13 +5,12 @@ export const singlePriceGridData: SinglePriceGridData = {
     title: "Join our community",
     description: "30-day, hassle-free money back guarantee",
     benefits: [
-      "Gain access to our full library of tutorials along with expert code reviews.",
-      "Perfect for any developers who are serious about honing their skills.",
+      "Gain access to our full library of tutorials along with expert code reviews. Perfect for any developers who are serious about honing their skills.",
     ],
   },
   subscription: {
     title: "Monthly Subscription",
-    price: "29",
+    price: 29,
     description: "Full access for less than $1 a day",
   },
   whyUs: {
