@@ -21,14 +21,14 @@ export default function SinglePriceGrid() {
 
   return (
     <article className="box-shadow-2 grid overflow-hidden rounded-[5px] text-base leading-[26px] tracking-[-0.2px] text-white sm:grid-cols-2 sm:grid-rows-2">
-      <div className="grid gap-4 bg-white px-6 pt-7 pb-8 sm:col-span-2">
-        <h1 className="text-cyan mb mb-2 text-xl leading-none font-bold tracking-[-0.25px]">
+      <div className="grid gap-4 bg-white px-6 pt-7 pb-8 sm:col-span-2 sm:gap-2.75 sm:p-10">
+        <h1 className="text-cyan mb-2 text-xl leading-none font-bold tracking-[-0.25px] sm:mb-3.25 sm:text-2xl sm:tracking-[-0.3px]">
           {aboutTitle}
         </h1>
-        <p className="text-bright-yellow text-[0.9375rem] leading-[20px] font-bold tracking-[-0.19px]">
+        <p className="text-bright-yellow text-[0.9375rem] leading-[20px] font-bold tracking-[-0.19px] sm:text-lg sm:leading-none sm:tracking-[-0.22px]">
           {aboutDescription}
         </p>
-        <ul>
+        <ul className="sm:w-10/12">
           {aboutBenefits.map((benefit) => (
             <li
               key={benefit}
@@ -39,7 +39,7 @@ export default function SinglePriceGrid() {
           ))}
         </ul>
       </div>
-      <div className="bg-cyan grid gap-1 p-6">
+      <div className="bg-cyan grid gap-1 p-6 sm:p-10">
         <h2 className="mb-3.5 text-lg leading-none font-bold tracking-[-0.22px]">
           {subscriptionTitle}
         </h2>
@@ -54,7 +54,7 @@ export default function SinglePriceGrid() {
           Sign Up
         </button>
       </div>
-      <div className="bg-cyan/85 grid gap-4.5 p-6">
+      <div className="bg-cyan/85 grid gap-4.5 p-6 sm:p-10">
         <h2 className="text-lg leading-none font-bold tracking-[-0.22px]">
           {whyUsTitle}
         </h2>
