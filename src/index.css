@@ -49,20 +49,20 @@ body {
   @apply text-sm tracking-[-0.17px];
 }
 
-@utility box-shadow-1 {
+@utility shadow-btn {
   box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.09);
 }
 
-@utility box-shadow-2 {
+@utility shadow-card {
   box-shadow: 0px 15px 30px rgba(0, 81, 171, 0.14);
 }
 
 @utility footer-link {
   @apply text-dark-grayish-blue rounded-xs font-bold;
-  @apply focus-visible:ring-cyan focus-visible:ring-offset-cyan focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:outline-none;
+  @apply focus-visible:ring-cyan focus-visible:ring-offset-light-gray focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:outline-none;
 }
 
 @utility btn-primary {
-  @apply bg-bright-yellow box-shadow-1 flex cursor-pointer items-center justify-center gap-2 rounded-lg px-8 pt-3.75 pb-3.5 text-base leading-none font-bold tracking-[-0.2px] text-white;
+  @apply bg-bright-yellow shadow-btn flex cursor-pointer items-center justify-center gap-2 rounded-lg px-8 pt-3.75 pb-3.5 text-base leading-none font-bold tracking-[-0.2px] text-white;
   @apply focus-visible:ring-bright-yellow focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:outline-none;
 }

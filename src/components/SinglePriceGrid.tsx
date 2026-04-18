@@ -1,16 +1,16 @@
 import { singlePriceGridData } from "data";
 
-const formattedPrice = (price: number) =>
-  new Intl.NumberFormat("en-US", {
-    style: "currency",
-    currency: "USD",
-  }).format(price);
+const priceFormatter = new Intl.NumberFormat("en-US", {
+  style: "currency",
+  currency: "USD",
+});
 
 export default function SinglePriceGrid() {
   const { about, subscription, whyUs } = singlePriceGridData;
+  const price = priceFormatter.format(subscription.price);
 
   return (
-    <article className="box-shadow-2 grid overflow-hidden rounded-[5px] text-base leading-[26px] tracking-[-0.2px] text-white sm:grid-cols-2 sm:grid-rows-2">
+    <article className="box-shadow-card grid overflow-hidden rounded-[5px] text-base leading-[26px] tracking-[-0.2px] text-white sm:grid-cols-2 sm:grid-rows-2">
       <section
         className="grid gap-4 bg-white px-6 pt-7 pb-8 sm:col-span-2 sm:gap-2.75 sm:p-10"
         aria-labelledby="about-title"
@@ -35,12 +35,9 @@ export default function SinglePriceGrid() {
         <h2 id="subscription-title" className="text-preset-h2 mb-3.5">
           {subscription.title}
         </h2>
-        <p
-          className="flex items-center gap-2.75"
-          aria-label={`${formattedPrice(subscription.price)} per month`}
-        >
+        <p className="flex items-center gap-2.75">
           <span className="text-[2rem] leading-none font-bold tracking-[-0.4px]">
-            {formattedPrice(subscription.price)}
+            {price}
           </span>
           <span className="opacity-50">per month</span>
         </p>
