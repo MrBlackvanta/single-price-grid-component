@@ -6,7 +6,7 @@ export default function App() {
       <main className="mt-9 w-full max-w-77.75 place-self-center sm:max-w-158.75">
         <SinglePriceGrid />
       </main>
-      <footer className="mt-auto w-full pb-4 text-center text-black">
+      <footer className="mt-auto w-full pb-4 text-center text-xs text-black sm:text-sm">
         Challenge by{" "}
         <a
           href="https://www.frontendmentor.io?ref=challenge"

@@ -2,7 +2,7 @@ export type SinglePriceGridData = {
   about: {
     title: string;
     description: string;
-    benefits: string[];
+    benefits: string;
   };
   subscription: {
     title: string;

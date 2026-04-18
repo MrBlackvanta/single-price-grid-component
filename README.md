@@ -7,6 +7,7 @@ This is a solution to the [Single Price Grid Component challenge on Frontend Men
 - [Overview](#overview)
   - [Screenshot](#screenshot)
   - [Links](#links)
+- [Known accessibility limitations](#known-accessibility-limitations)
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
@@ -23,7 +24,14 @@ This is a solution to the [Single Price Grid Component challenge on Frontend Men
 - Solution URL: [GitHub](https://github.com/MrBlackvanta/single-price-grid-component)
 - Live Site URL: [Netlify](https://vanta-single-price-grid-component.netlify.app)
 
-## My process
+## Known accessibility limitations
+
+Two color-contrast ratios in the rendered UI fall below WCAG 2.1 AA, and both are intentional — they match the Figma design spec exactly rather than deviating from it.
+
+- **"Sign Up" button.** White text (`#ffffff`) on the bright-yellow background (`hsl(71, 73%, 54%)`) yields a contrast ratio of ~1.83:1, below the 4.5:1 required for normal-size body text under WCAG AA.
+- **"per month" label.** White text at 50% opacity on the cyan card background drops the effective contrast ratio below the 4.5:1 AA threshold for supplementary text.
+
+Both values come from the Figma spec for this challenge. In a real product I'd raise these with design before shipping; for this Frontend Mentor build, fidelity to the provided design takes precedence. The price itself (`$29.00`) and the "per month" context are both announced by screen readers regardless, so the issue is sighted low-vision users only.
 
 ### Built with
 
@@ -48,7 +56,7 @@ This is a solution to the [Single Price Grid Component challenge on Frontend Men
   - Descriptive `alt` text sourced from the data layer rather than duplicating the product title.
   - Visible `focus-visible` rings on every interactive element for keyboard users.
 - **`Intl.NumberFormat` for currency.** Safer than `` `${price}` `` — it guarantees two-decimal output regardless of the raw number and localizes correctly if the app is ever translated.
-- **LCP / CLS hygiene on hero images.** `fetchPriority="high"`, `decoding="async"`, and per-breakpoint `width`/`height` attributes (on `<source>` for desktop 600×900 and on `<img>` for mobile 686×480) so the browser reserves the correct aspect ratio *for the variant it's actually going to render* — a single set of dimensions on `<img>` alone is wrong as soon as the art-directed variants have different ratios.
+- **LCP / CLS hygiene on hero images.** `fetchPriority="high"`, `decoding="async"`, and per-breakpoint `width`/`height` attributes (on `<source>` for desktop 600×900 and on `<img>` for mobile 686×480) so the browser reserves the correct aspect ratio _for the variant it's actually going to render_ — a single set of dimensions on `<img>` alone is wrong as soon as the art-directed variants have different ratios.
 - **Preloading the LCP image with media queries.** Two `<link rel="preload" as="image">` tags in `<head>`, each scoped by `media="(max-width: 767px)"` / `media="(min-width: 768px)"`, so the browser preloads only the variant that actually matches the current viewport. Big LCP improvement on mobile.
 - **Non-blocking webfont CSS.** Loading Google Fonts' stylesheet with `rel="preload" as="style"` + an `onload` swap to `rel="stylesheet"` (plus a `<noscript>` fallback) so the CSS request no longer blocks first paint.
 - **`prefers-reduced-motion`** handled globally in CSS, neutralizing transitions/animations for users who opt out at the OS level.

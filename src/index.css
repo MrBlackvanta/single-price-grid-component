@@ -1,5 +1,20 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: "Karla";
+  src: url("./assets/fonts/karla-v33-latin-regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Karla";
+  src: url("./assets/fonts/karla-v33-latin-700.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
 @theme {
   --color-cyan: hsl(179, 62%, 43%);
   --color-bright-yellow: hsl(71, 73%, 54%);
@@ -24,6 +39,14 @@ body {
     transition-duration: 0.01ms;
     scroll-behavior: auto;
   }
+}
+
+@utility text-preset-h2 {
+  @apply text-lg leading-none font-bold tracking-[-0.22px];
+}
+
+@utility text-preset-body {
+  @apply text-sm tracking-[-0.17px];
 }
 
 @utility box-shadow-1 {
