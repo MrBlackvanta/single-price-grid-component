@@ -21,7 +21,8 @@ This is a solution to the [Single Price Grid Component challenge on Frontend Men
 ### Links
 
 - Solution URL: [GitHub](https://github.com/MrBlackvanta/single-price-grid-component)
-- Live Site URL: [Netlify](https://vanta-single-price-grid-component.netlify.app)
+- Live Site URL: [Cloudflare](https://single-price-grid-component.abdelrhman-ahmed8881.workers.dev)
+- Mirror: [Netlify](https://vanta-single-price-grid-component.netlify.app)
 
 ## Known accessibility limitations
 
