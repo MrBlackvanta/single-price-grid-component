@@ -7,16 +7,7 @@ export default function App() {
         <SinglePriceGrid />
       </main>
       <footer className="mt-auto w-full pb-4 text-center text-xs text-black sm:text-sm">
-        Challenge by{" "}
-        <a
-          href="https://www.frontendmentor.io?ref=challenge"
-          className="footer-link"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Frontend Mentor
-        </a>
-        . Coded by{" "}
+        Coded by{" "}
         <a
           href="https://www.linkedin.com/in/abdelrhman-vanta/"
           className="footer-link"

@@ -16,13 +16,12 @@ This is a solution to the [Single Price Grid Component challenge on Frontend Men
 
 ### Screenshot
 
-![](./public/screenshot.png)
+![](./public/screenshot.webp)
 
 ### Links
 
 - Solution URL: [GitHub](https://github.com/MrBlackvanta/single-price-grid-component)
 - Live Site URL: [Cloudflare](https://single-price-grid-component.abdelrhman-ahmed8881.workers.dev)
-- Mirror: [Netlify](https://vanta-single-price-grid-component.netlify.app)
 
 ## Known accessibility limitations
 
@@ -45,6 +44,6 @@ Both values come from the Figma spec for this challenge. In a real product I'd r
 
 ## Author
 
-- UpWork - [Abdelrhman Abdelaal](https://upwork.com/freelancers/~01f0a9479696b61f49)
+- UpWork - [Abdelrhman Abdelaal](https://www.upwork.com/freelancers/mrblackvanta)
 - Frontend Mentor - [@MrBlackvanta](https://www.frontendmentor.io/profile/MrBlackvanta)
-- LinkedIn - [@abdelrhman-vanta](https://www.linkedin.com/in/abdelrhman-vanta/)
+- LinkedIn - [Abdelrhman Abdelaal](https://www.linkedin.com/in/abdelrhman-vanta/)
