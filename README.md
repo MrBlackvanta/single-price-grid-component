@@ -1,49 +1,29 @@
-# Frontend Mentor - Single Price Grid Component solution
+# Single price grid component
 
-This is a solution to the [Single Price Grid Component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/single-price-grid-component-5ce41129d0ff452fec5abbbc). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+My solution to the [Single price grid component](https://www.frontendmentor.io/challenges/single-price-grid-component-5ce41129d0ff452fec5abbbc)
+challenge on Frontend Mentor.
 
-## Table of contents
+![](./screenshot.webp)
 
-- [Overview](#overview)
-  - [Screenshot](#screenshot)
-  - [Links](#links)
-- [Known accessibility limitations](#known-accessibility-limitations)
-- [My process](#my-process)
-  - [Built with](#built-with)
-- [Author](#author)
+- Live: https://single-price-grid-component.abdelrhman-ahmed8881.workers.dev
+- Code: https://github.com/MrBlackvanta/single-price-grid-component
 
-## Overview
+## Built with
 
-### Screenshot
-
-![](./public/screenshot.webp)
-
-### Links
-
-- Solution URL: [GitHub](https://github.com/MrBlackvanta/single-price-grid-component)
-- Live Site URL: [Cloudflare](https://single-price-grid-component.abdelrhman-ahmed8881.workers.dev)
-
-## Known accessibility limitations
-
-Two color-contrast ratios in the rendered UI fall below WCAG 2.1 AA, and both are intentional — they match the Figma design spec exactly rather than deviating from it.
-
-- **"Sign Up" button.** White text (`#ffffff`) on the bright-yellow background (`hsl(71, 73%, 54%)`) yields a contrast ratio of ~1.83:1, below the 4.5:1 required for normal-size body text under WCAG AA.
-- **"per month" label.** White text at 50% opacity on the cyan card background drops the effective contrast ratio below the 4.5:1 AA threshold for supplementary text.
-
-Both values come from the Figma spec for this challenge. In a real product I'd raise these with design before shipping; for this Frontend Mentor build, fidelity to the provided design takes precedence. The price itself (`$29.00`) and the "per month" context are both announced by screen readers regardless, so the issue is sighted low-vision users only.
-
-### Built with
-
-- React 19 + Vite 8
+- React 19 and Vite
 - TypeScript
 - Tailwind CSS v4
-- Mobile-first
 
-- **`focus-visible` `ring-offset` matches the background**, not the ring.
-- **Extract `@utility` presets only for patterns used ≥ 2×.** Single-use utilities are just indirection.
+## Notes
+
+The focus ring's offset colour has to match the background behind the element, not the
+ring itself, or you get a halo on the coloured panels.
+
+I only pulled a pattern out into an `@utility` when it was used twice or more. One-off
+utilities are just a rename.
 
 ## Author
 
-- UpWork - [Abdelrhman Abdelaal](https://www.upwork.com/freelancers/mrblackvanta)
-- Frontend Mentor - [@MrBlackvanta](https://www.frontendmentor.io/profile/MrBlackvanta)
-- LinkedIn - [Abdelrhman Abdelaal](https://www.linkedin.com/in/abdelrhman-vanta/)
+- [LinkedIn](https://www.linkedin.com/in/abdelrhman-vanta/)
+- [UpWork](https://www.upwork.com/freelancers/mrblackvanta)
+- [Frontend Mentor](https://www.frontendmentor.io/profile/MrBlackvanta)
