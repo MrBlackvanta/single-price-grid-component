@@ -10,17 +10,10 @@ challenge on Frontend Mentor.
 
 ## Built with
 
-- React 19 and Vite
+- React
+- Vite
 - TypeScript
-- Tailwind CSS v4
-
-## Notes
-
-The focus ring's offset colour has to match the background behind the element, not the
-ring itself, or you get a halo on the coloured panels.
-
-I only pulled a pattern out into an `@utility` when it was used twice or more. One-off
-utilities are just a rename.
+- Tailwind CSS
 
 ## Author
 
